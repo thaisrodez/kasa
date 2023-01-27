@@ -1,0 +1,21 @@
+.kasa-header {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kasa-logo {
+  height: 68px;
+}
+
+.kasa-nav a {
+  color: #FF6060;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.current-page {
+  border-bottom: #FF6060 1px solid;
+}
