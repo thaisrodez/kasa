@@ -5,8 +5,10 @@ import Header from './Header';
 function Layout() {
   return (
     <div>
-      <Header />
-      <Outlet />
+      <main className="kasa-main">
+        <Header />
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
