@@ -1,0 +1,16 @@
+.banner-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./../../assets/banner.jpg");
+  background-size: cover;
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}
