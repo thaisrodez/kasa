@@ -1,0 +1,16 @@
+.card-article {
+  /* height: 340px; */
+  width: 320px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
