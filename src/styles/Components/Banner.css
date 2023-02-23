@@ -14,3 +14,17 @@
   font-size: 48px;
   font-weight: 500;
 }
+
+@media all and (max-width:768px) {
+  .banner-section {
+    height: 110px;
+    border-radius: 10px;
+    justify-content: start;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .banner-text {
+    font-size: 24px;
+  }
+}
