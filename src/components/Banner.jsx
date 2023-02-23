@@ -1,9 +1,14 @@
 import './../styles/Components/Banner.css';
 
-function Banner() {
+function Banner({ url, title }) {
   return (
-    <section className="banner-section">
-      <p className="banner-text">Chez vous, partout et ailleurs</p>
+    <section
+      className="banner-section"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${url})`,
+      }}
+    >
+      {title ? <p className="banner-text">{title}</p> : null}
     </section>
   );
 }
