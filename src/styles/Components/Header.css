@@ -11,11 +11,26 @@
 
 .kasa-nav a {
   color: #FF6060;
-  font-size: 24px;
+  font-size: 1rem;
   text-decoration: none;
   margin-left: 32px;
 }
 
 .current-page {
   border-bottom: #FF6060 1px solid;
+}
+
+/* mobile */
+@media all and (max-width: 768px) {
+  .kasa-header {
+    padding: 20px 0;
+  }
+
+  .kasa-logo {
+    height: 47px;
+  }
+
+  .kasa-nav a {
+    text-transform: uppercase;
+  }
 }
