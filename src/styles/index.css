@@ -13,4 +13,5 @@ code {
 .kasa-main {
   margin: 0 auto;
   width: 90%;
+  min-height: 84vh;
 }
