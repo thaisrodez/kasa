@@ -9,3 +9,13 @@
   column-gap: 60px;
   row-gap: 50px;
 }
+
+@media all and (max-width:768px) {
+  .cards-section {
+    background-color: #FFFFFF;
+    padding: 0px;
+    border-radius: 0px;
+    margin: 44px 0px;
+    row-gap: 32px;
+  }
+}
