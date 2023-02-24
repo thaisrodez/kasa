@@ -1,0 +1,74 @@
+.accomodation {
+  color: #FF6060;
+}
+
+.accomodation-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.accomodation-description {
+  display: flex;
+  gap: 76px
+}
+
+.accomodation-description article {
+  flex-basis: 50%;
+  margin: 24px 0;
+}
+
+.accomodation-host {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.accomodation-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.accomodation-location {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+@media all and (max-width:768px) {
+  .accomodation-details {
+    flex-direction: column;
+  }
+
+  .accomodation-description {
+    display: block;
+  }
+
+  .accomodation-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .accomodation-title {
+    font-size: 18px;
+  }
+
+  .accomodation-location {
+    font-size: 14px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 10px
+  }
+}
