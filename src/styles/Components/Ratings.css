@@ -1,0 +1,17 @@
+.ratings {
+  font-size: 24px;
+}
+
+.ratings i {
+  margin-left: 8px;
+}
+
+@media all and (max-width:768px) {
+  .ratings {
+    font-size: 16px;
+  }
+
+  .ratings i {
+    margin-left: 6px;
+  }
+}
