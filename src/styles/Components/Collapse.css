@@ -6,7 +6,7 @@
 
 .collapse-title {
   background-color: #FF6060;
-  padding: 6px 12px;
+  padding: 12px 12px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 }
 
 .chevron {
-  height: 32px;
+  font-size: 32px;
 }
 
 @media all and (max-width:768px) {

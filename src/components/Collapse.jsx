@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../styles/Components/Collapse.css';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +9,9 @@ function Collapse({ title, text }) {
       <div onClick={() => setIsOpen(!isOpen)} className="collapse-title">
         <h4>{title}</h4>
         {isOpen ? (
-          <ChevronUpIcon className="chevron" />
+          <i className="fa-solid fa-chevron-up chevron"></i>
         ) : (
-          <ChevronDownIcon className="chevron" />
+          <i className="fa-solid fa-chevron-down chevron"></i>
         )}
       </div>
       {isOpen ? (
