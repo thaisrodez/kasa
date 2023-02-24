@@ -1,4 +1,3 @@
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import '../styles/Components/Carrousel.css';
 import Pagination from './Pagination';
@@ -38,14 +37,14 @@ function Carrousel({ pictures }) {
       {isMultiplePictures ? (
         <>
           <div className="carrousel-navigation">
-            <ChevronLeftIcon
-              className="carrousel-chevron"
+            <i
+              className="fa-solid fa-chevron-left carrousel-chevron"
               onClick={onLeftClick}
-            />
-            <ChevronRightIcon
-              className="carrousel-chevron"
+            ></i>
+            <i
+              className="fa-solid fa-chevron-right carrousel-chevron"
               onClick={onRightClick}
-            />
+            ></i>
           </div>
           <Pagination
             currentPage={pictures.indexOf(currentPicture) + 1}
