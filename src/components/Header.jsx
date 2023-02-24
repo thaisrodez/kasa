@@ -6,7 +6,9 @@ function Header() {
   const { pathname } = useLocation();
   return (
     <header className="kasa-header">
-      <img src={logo} alt="kasa" className="kasa-logo" />
+      <Link to="/">
+        <img src={logo} alt="kasa" className="kasa-logo" />
+      </Link>
       <nav className="kasa-nav">
         <Link to="/" className={pathname === '/' ? 'current-page' : undefined}>
           Accueil
