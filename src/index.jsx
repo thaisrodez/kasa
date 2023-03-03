@@ -7,6 +7,7 @@ import ErrorPage from './pages/Error/Index';
 import About from './pages/About';
 import Accomodation from './pages/Accomodation/Index';
 import accomodations from './datas/accomodations.json';
+import Layout from './components/Layout';
 
 function loader({ params }) {
   // load data
@@ -20,18 +21,21 @@ function loader({ params }) {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: '/about',
-    element: <About />,
-  },
-  {
-    path: '/accomodation/:id',
-    element: <Accomodation />,
-    loader: loader,
-    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'accomodation/:id',
+        element: <Accomodation />,
+        loader: loader,
+        errorElement: <ErrorPage />,
+      },
+    ],
   },
 ]);
 
