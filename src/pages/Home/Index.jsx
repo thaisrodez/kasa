@@ -4,10 +4,11 @@ import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import accomodations from '../../datas/accomodations.json';
 import { Link } from 'react-router-dom';
+import Layout from '../../components/Layout';
 
 function Home() {
   return (
-    <div>
+    <Layout>
       <Banner url={banner} title="Chez vous, partout et ailleurs" />
       <section className="cards-section">
         {accomodations.map(({ id, title, cover }) => (
@@ -16,7 +17,7 @@ function Home() {
           </Link>
         ))}
       </section>
-    </div>
+    </Layout>
   );
 }
 
