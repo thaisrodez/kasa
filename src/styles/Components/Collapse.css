@@ -1,6 +1,5 @@
 .collapse {
   margin: 32px 72px;
-  background-color: #F6F6F6;
   border-radius: 5px;
 }
 
@@ -23,7 +22,15 @@
 .collapse-text {
   color: #FF6060;
   font-size: 24px;
-  padding: 0 12px 12px 12px;
+  padding: 12px;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+
+}
+
+.collapse-text ul {
+  list-style: none;
+  padding: 0;
 }
 
 .chevron {
@@ -46,6 +53,6 @@
   }
 
   .chevron {
-    height: 20px;
+    font-size: 20px;
   }
 }

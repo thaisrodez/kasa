@@ -3,7 +3,6 @@ import '../styles/Components/Collapse.css';
 
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <article className="collapse">
       <div onClick={() => setIsOpen(!isOpen)} className="collapse-title">
@@ -14,11 +13,19 @@ function Collapse({ title, text }) {
           <i className="fa-solid fa-chevron-down chevron"></i>
         )}
       </div>
-      {isOpen ? (
+      {isOpen && (
         <div className="collapse-text">
-          <p>{text}</p>
+          {typeof text === 'string' ? (
+            <p>{text}</p>
+          ) : (
+            <ul>
+              {text.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
-      ) : null}
+      )}
     </article>
   );
 }
