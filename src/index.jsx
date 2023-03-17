@@ -33,7 +33,6 @@ const router = createBrowserRouter([
         path: 'accomodation/:id',
         element: <Accomodation />,
         loader: loader,
-        errorElement: <ErrorPage />,
       },
     ],
   },
